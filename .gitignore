@@ -8,4 +8,12 @@
 /.next/cache
 /.next/cache/*
 /.next/static
-/.next/static/*         
+/.next/static/*  
+/.next/server
+/.next/server/*
+/.next/types
+/.next/types/*
+/.next/trace
+/.next/trace/*
+/.next/trace/trace.json
+  

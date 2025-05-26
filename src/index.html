@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional - Desarrollador Full Stack especializado en tecnologías web modernas">
+    <meta name="keywords" content="desarrollador, full stack, portfolio, proyectos, web development">
+    <meta name="author" content="Tu Nombre">
+    
+    <!-- Open Graph Meta Tags para redes sociales -->
+    <meta property="og:title" content="Franklin Andrés Rodríguez - Portfolio Profesional">
+    <meta property="og:description" content="Desarrollador Frontend especializado en JavaScript, HTML5, CSS3 y experiencias web interactivas">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://franklin-andres-rodriguez.github.io/portfolio-profesional">
+    <meta property="og:image" content="./assets/images/profile.jpg">
+    
+    <title>Franklin Andrés Rodríguez - Portfolio Profesional</title>
+    
+    <!-- Enlaces a hojas de estilo modulares -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    
+    <!-- Preconnect para optimización de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con navegación principal -->
+    <header class="header" id="header">
+        <nav class="navbar" role="navigation" aria-label="Navegación principal">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo" aria-label="Ir al inicio">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Sección Hero -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hola, soy <span class="highlight">Franklin Andrés Rodríguez</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Desarrollador Frontend</h2>
+                    <p class="hero-description">
+                        Especializado en crear experiencias web interactivas y funcionales con 
+                        JavaScript, HTML5 y CSS3. Apasionado por el desarrollo frontend moderno.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#contact" class="btn btn-secondary">Contactarme</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/images/profile.jpg" alt="Foto profesional de Franklin Andrés Rodríguez" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            Soy Franklin Andrés Rodríguez, un desarrollador frontend apasionado por crear 
+                            experiencias web interactivas y funcionales. Mi enfoque está en el desarrollo 
+                            con JavaScript vanilla, HTML5 semántico y CSS3 moderno, creando soluciones 
+                            que combinan usabilidad excepcional con código limpio y mantenible.
+                        </p>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3 class="skill-title">Frontend Core</h3>
+                                <ul class="skill-list">
+                                    <li>HTML5 Semántico</li>
+                                    <li>CSS3 & Layouts Modernos</li>
+                                    <li>JavaScript ES6+</li>
+                                    <li>DOM Manipulation</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3 class="skill-title">Herramientas & APIs</h3>
+                                <ul class="skill-list">
+                                    <li>Local Storage</li>
+                                    <li>Fetch API</li>
+                                    <li>Responsive Design</li>
+                                    <li>Git & GitHub</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3 class="skill-title">Especialidades</h3>
+                                <ul class="skill-list">
+                                    <li>Juegos Interactivos</li>
+                                    <li>Aplicaciones SPA</li>
+                                    <li>UI/UX Implementation</li>
+                                    <li>Performance Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                </div>
+                <div class="projects-grid" id="projects-container">
+                    <!-- Los proyectos se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">¿Tienes un proyecto en mente?</h3>
+                        <p class="contact-description">
+                            Estoy disponible para colaborar en proyectos interesantes. 
+                            ¡Hablemos sobre cómo puedo ayudarte!
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span class="contact-text">franklin.dev@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">💼</span>
+                                <span class="contact-text">GitHub: franklin-andres-rodriguez</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🌐</span>
+                                <span class="contact-text">Portfolio: franklin-andres-rodriguez.github.io</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">Villavicencio, Meta, Colombia</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/franklin-andres-rodriguez" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                                <span class="social-icon">🐙</span>
+                            </a>
+                            <a href="https://franklin-andres-rodriguez.github.io/mini-proyectos-web/" class="social-link" aria-label="Portfolio Actual" target="_blank" rel="noopener">
+                                <span class="social-icon">🌐</span>
+                            </a>
+                            <a href="mailto:franklin.dev@gmail.com" class="social-link" aria-label="Email" target="_blank" rel="noopener">
+                                <span class="social-icon">📧</span>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <span class="btn-loader" id="btn-loader"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2025 Tu Nombre. Todos los derechos reservados.
+                </p>
+                <p class="footer-text">
+                    Desarrollado con ❤️ en Villavicencio, Colombia
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript modulares -->
+    <script src="./js/main.js" defer></script>
+    <script src="./js/projects.js" defer></script>
+    <script src="./js/animations.js" defer></script>
+</body>
+</html>

@@ -21,8 +21,8 @@ const PROJECTS_DATA = [
     category: "frontend",
     status: "completed",
     date: "2024-10-15",
-    demoUrl: "https://franklin-andres-rodriguez.github.io/mini-proyectos-web/calculadora/",
-    githubUrl: "https://github.com/franklin-andres-rodriguez/mini-proyectos-web"
+    demoUrl: "https://github.com/Franklin-Andres-Rodriguez/FinDocs-.git",
+    githubUrl: "https://github.com/Franklin-Andres-Rodriguez/FinDocs-.git"
   },
   {
     id: 3,
